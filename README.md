@@ -20,6 +20,8 @@ Logs](http://cranlogs.r-pkg.org/badges/visdat)](http://cran.rstudio.com/web/pack
 state and is being actively
 developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
 
+[![Covrpage Summary](https://img.shields.io/badge/covrpage-Last_Build_2018_10_04-yellowgreen.svg)](http://tinyurl.com/ybdmhz55)
+
 # How to install
 
 visdat is available on CRAN
