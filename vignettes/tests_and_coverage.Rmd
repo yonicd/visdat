@@ -1,0 +1,114 @@
+---
+title: "Tests and Coverage"
+date: "`r format(Sys.time(), '%d %B, %Y %H:%M:%S')`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+  
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  eval = FALSE
+)
+```
+
+<!--- Placeholder for tests/README.md Do Not Edit--->
+This output is created by
+[covrpage](https://github.com/yonicd/covrpage).
+
+## Coverage
+
+Coverage summary is created using the
+[covr](https://github.com/r-lib/covr) package.
+
+| Object                                | Coverage (%) |
+| :------------------------------------ | :----------: |
+| visdat                                |    98.78     |
+| [R/vis-expect.R](https://github.com/yonicd/visdat/tree/master/R/vis-expect.R)   |    92.98     |
+| [R/internals.R](https://github.com/yonicd/visdat/tree/master/R/internals.R)     |    100.00    |
+| [R/vis-compare.R](https://github.com/yonicd/visdat/tree/master/R/vis-compare.R) |    100.00    |
+| [R/vis-cor.R](https://github.com/yonicd/visdat/tree/master/R/vis-cor.R)         |    100.00    |
+| [R/vis-dat.R](https://github.com/yonicd/visdat/tree/master/R/vis-dat.R)         |    100.00    |
+| [R/vis-guess.R](https://github.com/yonicd/visdat/tree/master/R/vis-guess.R)     |    100.00    |
+| [R/vis-miss.R](https://github.com/yonicd/visdat/tree/master/R/vis-miss.R)       |    100.00    |
+
+<br>
+
+## Unit Tests
+
+Unit Test summary is created using the
+[testthat](https://github.com/r-lib/testthat)
+package.
+
+|                              | file                                                                  |  n |  time | error | failed | skipped | warning |
+| ---------------------------- | :-------------------------------------------------------------------- | -: | ----: | ----: | -----: | ------: | ------: |
+| test\_variable\_spaces.R     | [test\_variable\_spaces.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test_variable_spaces.R)           |  1 | 0.046 |     0 |      0 |       0 |       0 |
+| test-guess-type.R            | [test-guess-type.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-guess-type.R)                       | 10 | 0.015 |     0 |      0 |       0 |       0 |
+| test-test-vis-miss-one-col.R | [test-test-vis-miss-one-col.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-test-vis-miss-one-col.R) |  1 | 0.002 |     0 |      0 |       1 |       0 |
+| test-vis-compare.R           | [test-vis-compare.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-compare.R)                     |  2 | 0.003 |     0 |      0 |       1 |       0 |
+| test-vis-cor.R               | [test-vis-cor.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-cor.R)                             |  2 | 0.002 |     0 |      0 |       1 |       0 |
+| test-vis-dat.R               | [test-vis-dat.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-dat.R)                             |  3 | 0.484 |     0 |      0 |       1 |       0 |
+| test-vis-expect.R            | [test-vis-expect.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-expect.R)                       |  1 | 0.000 |     0 |      0 |       1 |       0 |
+| test-vis-guess.R             | [test-vis-guess.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-guess.R)                         |  5 | 4.097 |     0 |      0 |       0 |       0 |
+| test-vis-large.R             | [test-vis-large.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-large.R)                         |  2 | 0.002 |     0 |      0 |       0 |       0 |
+| test-vis-miss.R              | [test-vis-miss.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-miss.R)                           |  1 | 0.001 |     0 |      0 |       1 |       0 |
+| test-visdat-internals.R      | [test-visdat-internals.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-visdat-internals.R)           |  4 | 0.093 |     0 |      0 |       0 |       0 |
+| test-vismiss-legend.R        | [test-vismiss-legend.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vismiss-legend.R)               |  8 | 0.013 |     0 |      0 |       0 |       0 |
+
+<details open>
+
+<summary> Show Detailed Test Results
+</summary>
+
+| file                                                                      | context                | test                                                                                                    | status  |  n |  time |
+| :------------------------------------------------------------------------ | :--------------------- | :------------------------------------------------------------------------------------------------------ | :------ | -: | ----: |
+| [test\_variable\_spaces.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test_variable_spaces.R#L12)           | Test names with spaces | vis\_dat works on dataframes with irregular variable names                                              | PASS    |  1 | 0.046 |
+| [test-guess-type.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-guess-type.R#L5)                        | Guess type             | guess\_element correctly identifies individual elements                                                 | PASS    | 10 | 0.015 |
+| [test-test-vis-miss-one-col.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-test-vis-miss-one-col.R#L15) | test-vis-dat-one-col   | vis\_miss creates the right plot when one column is presented                                           | SKIPPED |  1 | 0.002 |
+| [test-vis-compare.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-compare.R#L11)                     | comparing vis          | vis\_compare works                                                                                      | SKIPPED |  1 | 0.001 |
+| [test-vis-compare.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-compare.R#L19_L20)                 | comparing vis          | vis\_compare will not accept two dataframes of differing dims                                           | PASS    |  1 | 0.002 |
+| [test-vis-cor.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-cor.R#L7)                              | vis\_cor               | vis\_cor creates the right plot                                                                         | SKIPPED |  1 | 0.001 |
+| [test-vis-cor.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-cor.R#L14)                             | vis\_cor               | vis\_cor sends an error when used with the wrong data                                                   | PASS    |  1 | 0.001 |
+| [test-vis-dat.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-dat.R#L10)                             | vis\_dat               | vis\_dat creates the right plot                                                                         | SKIPPED |  1 | 0.001 |
+| [test-vis-dat.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-dat.R#L26)                             | vis\_dat               | vis\_dat doesn’t fail when using diamonds                                                               | PASS    |  1 | 0.420 |
+| [test-vis-dat.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-dat.R#L32)                             | vis\_dat               | vis\_dat fails when the wrong palette is provided                                                       | PASS    |  1 | 0.063 |
+| [test-vis-expect.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-expect.R#L19)                       | vis\_expect            | vis\_expect creates the right plot                                                                      | SKIPPED |  1 | 0.000 |
+| [test-vis-guess.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-guess.R#L10)                         | vis\_guess             | vis\_guess creates the right plot                                                                       | PASS    |  4 | 2.152 |
+| [test-vis-guess.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-guess.R#L17)                         | vis\_guess             | vis\_guess fails when the wrong palette is provided                                                     | PASS    |  1 | 1.945 |
+| [test-vis-large.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-large.R#L10)                         | Warn for large data    | vis\_dat and vis\_miss throw warnings when the DF is above size                                         | PASS    |  2 | 0.002 |
+| [test-vis-miss.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vis-miss.R#L12)                           | vis\_miss              | vis\_miss creates the right plot                                                                        | SKIPPED |  1 | 0.001 |
+| [test-visdat-internals.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-visdat-internals.R#L15_L16)       | Internals              | vis\_gather\_ returns the same as previous                                                              | PASS    |  1 | 0.046 |
+| [test-visdat-internals.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-visdat-internals.R#L38)           | Internals              | vis\_extract\_value performs the same as old method                                                     | PASS    |  1 | 0.045 |
+| [test-visdat-internals.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-visdat-internals.R#L43)           | Internals              | any\_numeric returns TRUE for numeric dataframes and FALSE for dataframes containing non-numeric values | PASS    |  2 | 0.002 |
+| [test-vismiss-legend.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vismiss-legend.R#L10)               | vis\_miss Legend       | miss\_guide\_label works for exactly 0.1% missing                                                       | PASS    |  2 | 0.003 |
+| [test-vismiss-legend.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vismiss-legend.R#L20)               | vis\_miss Legend       | miss\_guide\_label works for \< 0.1% missing                                                            | PASS    |  2 | 0.003 |
+| [test-vismiss-legend.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vismiss-legend.R#L30)               | vis\_miss Legend       | miss\_guide\_label works for no missing                                                                 | PASS    |  2 | 0.003 |
+| [test-vismiss-legend.R](https://github.com/yonicd/visdat/tree/master/tests/testthat/test-vismiss-legend.R#L40_L43)           | vis\_miss Legend       | miss\_guide\_label works for some missings                                                              | PASS    |  2 | 0.004 |
+
+</details>
+
+<details>
+
+<summary> Session Info </summary>
+
+| Field    | Value                               |
+| :------- | :---------------------------------- |
+| Version  | R version 3.5.1 (2018-07-02)        |
+| Platform | x86\_64-apple-darwin15.6.0 (64-bit) |
+| Running  | macOS High Sierra 10.13.6           |
+| Language | en\_US                              |
+| Timezone | America/New\_York                   |
+
+| Package  | Version    |
+| :------- | :--------- |
+| testthat | 2.0.0.9000 |
+| covr     | 3.2.0      |
+| covrpage | 0.0.58     |
+
+</details>
+
+<!--- Final Status : skipped/warning --->
